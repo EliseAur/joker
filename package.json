@@ -1,31 +1,34 @@
 {
-    "name": "joker",
-    "version": "0.1.0",
-    "description": "Application that tells jokes",
-    "type": "module",
-    "main": "src/index.js",
-    "scripts": {
-        "test": "node src/js/joker.js",
-        "format": "prettier -w src/js/joker.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/EliseAur/joker.git"
-    },
-    "keywords": [
-        "testing",
-        "website"
-    ],
-    "author": "Elise A <EliAur58209@stud.noroff.no>",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/EliseAur/joker/issues"
-    },
-    "homepage": "https://github.com/EliseAur/joker#readme",
-    "devDependencies": {
-        "prettier": "^3.2.2"
-    },
-    "dependencies": {
-        "give-me-a-joke": "^0.5.1"
-    }
+  "name": "joker",
+  "version": "0.2.0",
+  "description": "Application that tells jokes",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/js/joker.test.js",
+    "format": "prettier -w src/**/*.js",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliseAur/joker.git"
+  },
+  "keywords": [
+    "testing",
+    "website"
+  ],
+  "author": "Elise A <EliAur58209@stud.noroff.no>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliseAur/joker/issues"
+  },
+  "homepage": "https://github.com/EliseAur/joker#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.2"
+  },
+  "dependencies": {
+    "give-me-a-joke": "^0.5.1"
+  }
 }
